@@ -1,3 +1,20 @@
+1) setting nama username dan email github digit bash
+
+- git config --global user.name "nama username"
+- git config --global user.email "nama email yang terdaftar di 
+
+2) buat repo
+- cari tab new repository
+- namaUsername.github.io => nama repo
+- git clone (namaRepo)
+- buka direktorinya
+- copy file semua tapi jangan copy file .git 
+- git add .
+- git commit -m "nama komen"
+- git push origin
+
+
+
 buka git BASH
 	--> cd c:/xampp/htdocs/takhs2209.github.io
 	
@@ -6,4 +23,8 @@ buka git BASH
 	--> git commit -m "perubahan 1" (tekan enter)
 
 	--> git push origin master
+
+
+
+
 
