@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/simple.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
@@ -52,21 +53,78 @@
 
 								<h3>Fit</h3>
 								<span class="image fit"><img src="images/M2/judul.jpg" alt="" /></span>
+								<h4></h4>
 								<div class="box alt">
 									<div class="row 50% uniform">
-										<div class="4u"><span class="image fit"><img src="images/M2/01.jpg" alt="" /></span></div>
-										<div class="4u"><span class="image fit"><img src="images/M2/10.jpg" alt="" /></span></div>
-										<div class="4u$"><span class="image fit"><img src="images/M2/03.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/M2/01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></span></div>
+										<div class="4u"><span class="image fit"><img src="images/M2/10.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/M2/03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></span></div>
 										<!-- Break -->
-										<div class="4u"><span class="image fit"><img src="images/M2/04.jpg" alt="" /></span></div>
-										<div class="4u"><span class="image fit"><img src="images/M2/05.jpg" alt="" /></span></div>
-										<div class="4u$"><span class="image fit"><img src="images/M2/08.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/M2/04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></span></div>
+										<div class="4u"><span class="image fit"><img src="images/M2/05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/M2/08.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></span></div>
 										<!-- Break -->
-										<div class="4u"><span class="image fit"><img src="images/M2/07.jpg" alt="" /></span></div>
-										<div class="4u"><span class="image fit"><img src="images/M2/06.jpg" alt="" /></span></div>
-										<div class="4u$"><span class="image fit"><img src="images/M2/09.png" alt="" /></span></div>
-										<div class="4u$"><span class="image fit"><img src="images/M2/02.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/M2/07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></span></div>
+										<div class="4u"><span class="image fit"><img src="images/M2/06.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/M2/09.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/M2/02.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></span></div>
 									</div>
+								</div>
+
+								<div id="myModal" class="modal">
+									<span class="close cursor" onclick="closeModal()">&times;</span>
+									<h4>Tri Fold Katalog Dalam</h4>
+									<div class="modal-content">
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/01.jpg" style="width:50%">
+									      <h4>Teknik Efek Layer</h4>
+									    </div>
+
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/10.jpg" style="width:50%">
+									      <h4>Tri Fold Katalog Luar</h4>
+									    </div>
+
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/03.jpg" style="width:50%">
+									      <h4>Teknik Mewarnai Gambar</h4>
+									    </div>
+									    
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/04.jpg" style="width:50%">
+									      <h4>Teknik Kolase</h4>
+									    </div>
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/05.jpg" style="width:50%">
+									      <h4>Teknik Mewarnai Gambar 2</h4>
+									    </div>
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/08.jpg" style="width:50%">
+									      <h4>Teknik Monochrome</h4>
+									    </div>
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/07.jpg" style="width:50%">
+									      <h4>Teknik Duplicate Layer</h4>
+									    </div>
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/06.jpg" style="width:50%">
+									      <h4>Teknik Displace Map</h4>
+									    </div>
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/09.png" style="width:50%">
+									      <h4>Simple Poster</h4>
+									    </div>
+									    <div class="mySlides" align="middle">
+									      <img src="images/M2/02.jpg" style="width:50%">
+									      <h4>Teknik Menghilangkan Jerawat</h4>
+									    </div>
+									    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+									    <div class="caption-container">
+									      <p id="caption"></p>
+									    </div>
+									  </div>
 								</div>
 
 								<hr />
@@ -143,6 +201,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/simple.js"></script>
 
 	</body>
 </html>

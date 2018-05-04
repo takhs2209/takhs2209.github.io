@@ -1,0 +1,9 @@
+buka git BASH
+	--> cd c:/xampp/htdocs/takhs2209.github.io
+	
+	--> git add . (tekan enter)
+
+	--> git commit -m "perubahan 1" (tekan enter)
+
+	--> git push origin master
+
